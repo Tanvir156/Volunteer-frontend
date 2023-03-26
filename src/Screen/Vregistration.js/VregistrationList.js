@@ -38,7 +38,7 @@ const VregistrationList = () => {
   const [rows, setRows] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios.get("/api/volenteer/showlist");
+      const result = await axios.get("https://volun-backend.onrender.com/api/volenteer/showlist");
       setRows(result.data);
     };
 
