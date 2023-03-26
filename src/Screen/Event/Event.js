@@ -42,7 +42,7 @@ const Event = () => {
       };
 
       const { data } = await axios.post(
-        "/api/volenteer",
+        "https://volun-backend.onrender.com/api/volenteer",
         {
           evenName,
           evenDescription,
