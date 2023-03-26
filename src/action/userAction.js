@@ -23,7 +23,7 @@ export const login = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "/api/users/login",
+      "https://volun-backend.onrender.com/api/users/login",
       { email, password },
       config
     );
@@ -58,7 +58,7 @@ export const register = (name, email, password, pic) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "/api/users",
+      "https://volun-backend.onrender.com/api/users",
       { name, pic, email, password },
       config
     );
@@ -94,7 +94,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.post("/api/users/updateprofile", user, config);
+    const { data } = await axios.post("https://volun-backend.onrender.com/api/users/updateprofile", user, config);
 
     dispatch({ type: USER_UPDATE_SUCCESS, payload: data });
 
