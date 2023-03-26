@@ -63,7 +63,7 @@ function LoginScreen() {
         position: "top-center",
       });
     } else {
-      const res = await fetch(`/api/users/changepass/${id}/${token}`, {
+      const res = await fetch(`https://volun-backend.onrender.com/api/users/changepass/${id}/${token}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
