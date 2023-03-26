@@ -53,7 +53,7 @@ function ForgotPass({ history }) {
       });
     } else {
       setLoading(true);
-      const res = await fetch("api/users/resetpass", {
+      const res = await fetch("https://volun-backend.onrender.com/api/users/resetpass", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
