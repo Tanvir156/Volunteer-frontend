@@ -43,7 +43,7 @@ const Vregistration = () => {
       };
 
       const { data } = await axios.post(
-        "/api/volenteer/registervolun",
+        "https://volun-backend.onrender.com/api/volenteer/registervolun",
         {
           vName,
           vEmail,
