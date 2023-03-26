@@ -34,7 +34,7 @@ function LoginScreen() {
   const [message, setMessage] = useState("");
 
   const userValid = async () => {
-    const res = await fetch(`/api/users/resetpassword/${id}/${token}`, {
+    const res = await fetch(`https://volun-backend.onrender.com/api/users/resetpassword/${id}/${token}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
