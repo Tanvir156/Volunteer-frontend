@@ -9,10 +9,10 @@ import axios from "axios";
 const FrontPage = () => {
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
-  const [details, setDetails] = useState([]);
+  const [details, setDetails] = useState("");
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios.get("/api/volenteer/show");
+      const result = await axios.get("https://volun-backend.onrender.com/api/volenteer/show");
       setDetails(result.data);
     };
 
